@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: violet;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 18px;
+  background-color: blue;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: red;
+}
+
