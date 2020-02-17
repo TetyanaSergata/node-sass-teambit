@@ -1,5 +1,23 @@
-.navbar{
-  height: 100px;
-  width: 100%;
-  background-color: red;
+header{
+  .navbar{
+    height: 80px;
+    width: 100%;
+    // background-color: red;
+  }
+    .nav-left{
+      @include floatElement;
+      width: 20%;
+      height: 100%;
+      background-color: lightblue;
+    }
+      .logo img{
+        width: 100px;
+      }
+
+    .nav-right{
+      @include floatElement;
+      width: 80%;
+      height: 100%;
+      background-color: lightgreen;
+    }
 }

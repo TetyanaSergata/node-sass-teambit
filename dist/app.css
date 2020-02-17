@@ -8,12 +8,34 @@ body {
   background-color: violet;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 18px;
-  background-color: blue;
+  background-color: lightcoral;
 }
 
-.navbar {
-  height: 100px;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .navbar {
+  height: 80px;
   width: 100%;
-  background-color: red;
+}
+
+header .nav-left {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+header .logo img {
+  width: 100px;
+}
+
+header .nav-right {
+  float: left;
+  width: 80%;
+  height: 100%;
+  background-color: lightgreen;
 }
 
