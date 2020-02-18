@@ -6,12 +6,25 @@
 
 body{
   font-family: $fontFamily;
-  font-size: $fontSize1;
-  color: $color;
+  font-size: $fontSize16;
+  color: $mainColor;
 }
 
 .wrapper{
-  width: 90%;
+  width: $heightWrapper;
   margin: 0 auto;
-  // background-color: red;
+}
+
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.display_none{
+  display: none;
+}
+
+.margin_left_5{
+  margin-left: 5px;
 }

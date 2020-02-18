@@ -1,3 +1,10 @@
 @mixin floatElement {
   float: left;
 }
+
+@mixin btn{
+  padding: 10px;
+  border: 1px solid $secondaryColor;
+  border-radius: 7px;
+
+}

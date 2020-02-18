@@ -1,6 +1,6 @@
 header{
   .navbar{
-    height: 80px;
+    height: $heightHeader;
     width: 100%;
     border-bottom: 1px solid grey;
     // background-color: red;
@@ -12,21 +12,59 @@ header{
     }
       .logo img{
         height: 100%;
+        margin-left: -10px;
       }
 
     .nav-right{
       @include floatElement;
+      // position: relative;
       width: 40%;
       height: 100%;
-      background-color: lightgreen;
+
     }
       ul{
-        line-height: 80px;
-
+        display: flex;
+        justify-content: space-between;
+        line-height: $heightHeader;
         list-style: none;
       }
-        li{
-          margin-right: 25px;
-          display: inline-block;
+        li:last-child{
+          margin-right: 0;
         }
+
+        li{
+          display: inline-block;
+          font-weight: bold;
+          margin-right: 30px;
+        }
+         & .dropdown{
+            position: relative;
+          }
+          .sign_up{
+            @include btn;
+            color: $secondaryColor;
+          }
+            & .logo{
+            height: 45px;
+            vertical-align: middle;
+            line-height: $heightHeader;
+            }
+        & a:hover{
+          color: $secondaryColor;
+        }
+        a{
+          text-decoration: none;
+          color: $mainColor;
+          }
+
+      & li.dropdown:hover ul{
+          position: absolute;
+          display: grid;
+          line-height: 30px;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 5px 4px 15px 1px rgba(0,0,0,0.70);
+          border: 1px solid $mainColor;
+        }
+
 }

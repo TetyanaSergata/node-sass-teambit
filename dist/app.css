@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,800&display=swap);* {
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +15,20 @@ body {
   margin: 0 auto;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display_none {
+  display: none;
+}
+
+.margin_left_5 {
+  margin-left: 5px;
+}
+
 header .navbar {
   height: 80px;
   width: 100%;
@@ -29,22 +43,65 @@ header .nav-left {
 
 header .logo img {
   height: 100%;
+  margin-left: -10px;
 }
 
 header .nav-right {
   float: left;
   width: 40%;
   height: 100%;
-  background-color: lightgreen;
 }
 
 header ul {
+  display: flex;
+  justify-content: space-between;
   line-height: 80px;
   list-style: none;
 }
 
+header li:last-child {
+  margin-right: 0;
+}
+
 header li {
-  margin-right: 25px;
   display: inline-block;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+header .dropdown {
+  position: relative;
+}
+
+header .sign_up {
+  padding: 10px;
+  border: 1px solid #233569;
+  border-radius: 7px;
+  color: #233569;
+}
+
+header .logo {
+  height: 45px;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+header a:hover {
+  color: #233569;
+}
+
+header a {
+  text-decoration: none;
+  color: #58402C;
+}
+
+header li.dropdown:hover ul {
+  position: absolute;
+  display: grid;
+  line-height: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, 0.7);
+  border: 1px solid #58402C;
 }
 
