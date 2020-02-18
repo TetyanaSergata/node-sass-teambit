@@ -5,10 +5,9 @@
 }
 
 body {
-  background-color: violet;
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 18px;
-  background-color: lightcoral;
+  font-size: 16px;
+  color: #58402C;
 }
 
 .wrapper {
@@ -19,23 +18,33 @@ body {
 header .navbar {
   height: 80px;
   width: 100%;
+  border-bottom: 1px solid grey;
 }
 
 header .nav-left {
   float: left;
-  width: 20%;
+  width: 60%;
   height: 100%;
-  background-color: lightblue;
 }
 
 header .logo img {
-  width: 100px;
+  height: 100%;
 }
 
 header .nav-right {
   float: left;
-  width: 80%;
+  width: 40%;
   height: 100%;
   background-color: lightgreen;
+}
+
+header ul {
+  line-height: 80px;
+  list-style: none;
+}
+
+header li {
+  margin-right: 25px;
+  display: inline-block;
 }
 
