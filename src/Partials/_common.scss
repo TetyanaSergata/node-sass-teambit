@@ -8,10 +8,11 @@ body{
   font-family: $fontFamily;
   font-size: $fontSize16;
   color: $mainColor;
+  background-color: $basicColor;
 }
 
 .wrapper{
-  width: $heightWrapper;
+  width: $widthWrapper;
   margin: 0 auto;
 }
 

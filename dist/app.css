@@ -8,6 +8,7 @@ body {
   font-family: "Alegreya Sans", sans-serif;
   font-size: 16px;
   color: #58402C;
+  background-color: white;
 }
 
 .wrapper {
@@ -48,8 +49,16 @@ header .logo img {
 
 header .nav-right {
   float: left;
+  position: relative;
   width: 40%;
   height: 100%;
+}
+
+header i.hamburger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header ul {
@@ -80,6 +89,11 @@ header .sign_up {
   color: #233569;
 }
 
+header .sign_up:hover {
+  color: white;
+  background-color: #233569;
+}
+
 header .logo {
   height: 45px;
   vertical-align: middle;
@@ -101,7 +115,59 @@ header li.dropdown:hover ul {
   line-height: 30px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, 0.7);
-  border: 1px solid #58402C;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid lightgrey;
+  top: 60px;
+  z-index: 5;
+  background-color: white;
+}
+
+header .display_none {
+  top: 60px;
+  z-index: 5;
+  background-color: white;
+}
+
+.jumbotron {
+  height: 600px;
+  width: 100%;
+}
+
+.jumbotron-left {
+  float: left;
+  height: 100%;
+  width: 45%;
+  background-color: lightgreen;
+}
+
+.jumbotron-right {
+  float: left;
+  height: 100%;
+  width: 55%;
+  background-color: violet;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-right i.fa-bars {
+    display: block;
+  }
+
+  .nav-right .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-left {
+    width: 40%;
+  }
+
+  .nav-right {
+    width: 60%;
+  }
+
+  .jumbotron-left {
+    background-color: red;
+  }
 }
 
